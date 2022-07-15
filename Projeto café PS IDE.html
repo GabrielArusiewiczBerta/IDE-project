@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+  <meta charset="utf-8" />
+  <head>
+    <title>Café balaço</title>
+  </head>
+  <body>
+    <h2>Home</h2>
+
+    <h2><a name="about"></a>About</h2>
+
+    <h2><a name="menu"></a>Menu</h2>
+
+    <h2><a name="endereço"></a>Endereço</h2>
+
+    <h3><a href="about">Sobre o café</a></h3>
+    <p>Lorem ipsum blablabla lero lero café bom</p>
+    <img src="veiocafe.jpg" alt="Velho barreiro com café" />
+
+    <h2><a href="menu">O Menu</a></h2>
+    <a href="#" class="eat js-eat" onclick="toggle('eat');">EAT</a>
+    <a href="#" class="drink js-drink" onclick="toggle('drink');">DRINK</a>
+    <nav class="navigation js-navigation">
+      <div id="eat" class="content">
+        <ul>
+          <li>
+            <p>
+              Bread Basket
+              <br />
+              <br />
+              Assortment of fresh baked fruit breads and muffins 5.50
+            </p>
+          </li>
+          <li>
+            <p>
+              Honey Almond Granola with Fruits
+              <br />
+              <br />
+              Natural cereal of honey toasted oats, raisins, almonds and dates
+              7.00
+            </p>
+          </li>
+          <li>
+            <p>
+              Belgian Waffle
+              <br />
+              <br />
+              Vanilla flavored batter with malted flour 7.50
+            </p>
+          </li>
+          <li>
+            <p>
+              Scrambled eggs
+              <br />
+              <br />
+              Scrambled eggs, roasted red pepper and garlic, with green onions
+              7.50
+            </p>
+          </li>
+          <li>
+            <p>
+              Blueberry Pancakes
+              <br />
+              <br />
+              With syrup, butter and lots of berries 8.50
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div id="drink" class="content">
+        <ul>
+          <li>
+            <p>
+              Coffee
+              <br />
+              <br />
+              Regular coffee 2.50
+            </p>
+          </li>
+          <li>
+            <p>
+              Chocolato
+              <br />
+              <br />
+              Chocolate espresso with milk 4.50
+            </p>
+          </li>
+          <li>
+            <p>
+              Corretto
+              <br />
+              <br />
+              Whiskey and coffee 5.00
+            </p>
+          </li>
+          <li>
+            <p>
+              Iced tea
+              <br />
+              <br />
+              Hot tea, except not hot 3.00
+            </p>
+          </li>
+          <li>
+            <p>
+              Soda
+              <br />
+              <br />
+              Coke, Sprite, Fanta, etc. 2.50
+            </p>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <script>
+      function toggle(id) {
+        var isHidden = document.getElementById(id).style.visibility == "hidden";
+        document.getElementById(id).style.visibility = isHidden
+          ? "visible"
+          : "hidden";
+      }
+    </script>
+    <h2><a href="endereço">Endereço</a></h2>
+
+    <p>R. Gen. Lima e Silva - Centro Histórico, Porto Alegre - RS, 90450-190</p>
+  </body>
+</html>
