@@ -1,3 +1,41 @@
 html {
-    background-color: #f7f5f2;
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0px;
+  min-height: 100%;
+  width: 100%;
+  background-color: #f7f5f2;
+}
+
+nav {
+  background-color: black;
+  position: sticky;
+  top: 0px;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-around;
+  align-items: center;
+  height: 40px;
+  width: 100%;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-family: "Inconsolata";
+  padding: 5px 20px;
+}
+
+.fundopreto {
+  background: black;
+  color: white;
+  width: 50%;
 }
