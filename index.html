@@ -8,22 +8,24 @@
     <link rel="stylesheet" href="public/css/style.css">
     <script src="public/js/index.js"></script>
     <title>The Café ☕</title>
+    <link href="style.css" rel="stylesheet" />
   </head>
   <body>
     <nav>
       <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#menu">Menu</a></li>
-        <li><a href="#where">Where</a></li>
+        <li><a onclick="scrollPage('home');">Home</a></li>
+        <li><a onclick="scrollPage('about');">About</a></li>
+        <li><a onclick="scrollPage('menu');">Menu</a></li>
+        <li><a onclick="scrollPage('where');">Where</a></li>
       </ul>
     </nav>
 
     <header id="home">
-      <h1>The Café</h1>
+      <h1 class="fundopreto">The Café</h1>
 
       <figure>
-        <img src="public/img/coffeehouse.jpg" alt="Mesa de Pães" />
+        <img src="coffeehouse 1.png" alt="Mesa de Pães" 
+        width="500"/>
       </figure>
 
       <figcaption>
@@ -34,7 +36,7 @@
 
     <main>
       <section id="about">
-        <h2>About The Cafe</h2>
+        <h2 class="fundopreto">About The Cafe</h2>
 
         <p>
           The Cafe was founded in blabla by Mr. Smith in lorem ipsum dolor sit
@@ -56,7 +58,7 @@
         </blockquote>
 
         <figure>
-          <img src="public/img/coffeeshop.jpg" alt="Balcão da Cafeteria" />
+          <img src="coffeeshop 1.png" alt="Balcão da Cafeteria" />
         </figure>
 
         <div>
@@ -66,18 +68,12 @@
         </div>
       </section>
       <section id="menu">
-        <h2>
+        <h2 class="fundopreto">
           the menu
         </h2>
-        <div>
-          <menu>
-            <button>
-              Eat
-            </button>
-            <button>
-              Drink
-            </button>
-          </menu>
+         <a class="eat js-eat" onclick="toggle('eat');">EAT</a>
+         <a class="drink js-drink" onclick="toggle('drink');">DRINK</a>
+        <div id="drink" class="content">
           <section>
             <ul>
               <li>
@@ -122,6 +118,8 @@
               </li>
             </ul>
           </section>
+        </div>
+        <div id="eat" class="content">
           <section>
             <ul>
               <li>
@@ -165,21 +163,22 @@
                 </p>
               </li>
             </ul>
-            <figure>
-              <img src="public/img/coffeehouse2.jpg" alt="Xicara de cafe" />
-            </figure>
+           
           </section>
         </div>
+        <figure>
+          <img src="coffeehouse2 1.png" alt="Xicara de cafe" />
+        </figure>
       </section>
       <section id="where">
-        <h2>
+        <h2 class="fundopreto">
           Where to find us
         </h2>
         <p>
           Find us at some address at some place.
         </p>
         <figure>
-          <img src="public/img/map.jpg" alt="Xicara de cafe" />
+          <img src="map 1.png" alt="Xicara de cafe" />
         </figure>
         <p>
           <div>
@@ -208,5 +207,23 @@
     </main>
 
     <footer></footer>
+
+    <style>
+      #eat {display: none; }
+      #drink {display: none;}
+    </style>
+
+    <script>
+        function toggle(id) {
+            document.getElementById("drink").style.display = "none";
+            document.getElementById("eat").style.display = "none";
+            document.getElementById(id).style.display = "initial";
+        }
+
+        function scrollPage(id) {
+        var element = document.getElementById(id);
+        element.scrollIntoView({behavior: 'smooth'});
+        }
+    </script>
   </body>
 </html>
