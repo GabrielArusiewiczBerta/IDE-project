@@ -1,124 +1,123 @@
 html {
-    margin: 0px;
-    height: 100%;
-    width: 100%;
-    scroll-padding-top: 50px;
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+  scroll-padding-top: 50px;
 }
 
 body {
-    margin: 0px;
-    min-height: 100%;
-    width: 100%;
-    background-color: #f7f5f2;
-    font-family: 'Inconsolata';
-    overflow-y: scroll;
-    scroll-behavior: smooth;
+  margin: 0px;
+  min-height: 100%;
+  width: 100%;
+  background-color: #f7f5f2;
+  font-family: "Inconsolata";
+  overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 
 /* Menu Topbar */
 nav {
-    background-color: black;
-    position: sticky;
-    top: 0px;
-    z-index: 9999;
+  background-color: black;
+  position: sticky;
+  top: 0px;
+  z-index: 9999;
 }
 
 nav ul {
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    justify-content: space-around;
-    align-items: center;
-    height: 40px;
-    width: 100%;
-    margin: 0px;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-around;
+  align-items: center;
+  height: 40px;
+  width: 100%;
+  margin: 0px;
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: white;
-    text-transform: uppercase;
-    padding: 5px 20px;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  padding: 5px 20px;
 }
 
 /* Seção inicial */
 header {
-    position: relative;
+  position: relative;
 }
 
 header h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    color: white;
-    font-size: 60px;
-    overflow-wrap: break-word;
-    width: 120px;
-    line-height: 80px;
-    margin: 0px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  font-size: 60px;
+  overflow-wrap: break-word;
+  width: 120px;
+  line-height: 80px;
+  margin: 0px;
 }
 
 header figure {
-    width: 100%;
-    margin: 0%;
-    height: 100%;
+  width: 100%;
+  margin: 0%;
+  height: 100%;
 }
 
 header figure img {
-    width: 100%;
-    height: 600px;
-    object-fit: cover;
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
 }
 
 header figcaption {
-    position: absolute;
-    bottom: 0px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    color: white;
-    margin-bottom: 20px;
-    align-content: center;
-    align-items: center;
+  position: absolute;
+  bottom: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  color: white;
+  margin-bottom: 20px;
+  align-content: center;
+  align-items: center;
 }
 
 header figcaption address {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
 header figcaption time {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
 /* Utilidades */
 .fundo-preto {
-    padding: 5px 10px;
-    background: black;
-    color: white;
+  padding: 5px 10px;
+  background: black;
+  color: white;
 }
 
 /* Scroll suave */
 * {
-    scroll-behavior: smooth !important;
+  scroll-behavior: smooth !important;
 }
-
 
 /* Scrollbar */
 ::-webkit-scrollbar {
-    width: 10px;
+  width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+  background: #f1f1f1;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #888;
+  background: #888;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #555;
+  background: #555;
 }
 
 .fundopreto {
@@ -139,8 +138,8 @@ header figcaption time {
   text-align: center;
   display: grid;
   grid-template-areas:
-  "menu"
-  "eat drink"
+    "menu"
+    "eat drink";
 }
 .menu {
   padding: auto;
@@ -157,7 +156,6 @@ header figcaption time {
   background: black;
   color: white;
   width: 130px;
-
 }
 .eat {
   grid-area: eat;
