@@ -44,3 +44,57 @@ nav ul li a {
   color: white;
   width: 200px;
 }
+
+#menu {
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  display: grid;
+  grid-template-areas;
+  "menu"
+  "eat drink"
+}
+.menu {
+  padding: auto;
+  height: auto;
+  border: groove;
+}
+
+.menuPrinc {
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  text-align: center;
+  background: black;
+  color: white;
+  width: 130px;
+
+}
+.eat {
+  grid-area: eat;
+  width: 320px;
+  display: inline-block;
+  margin: 4px 10px 5px 10px;
+  background: grey;
+  color: white;
+}
+.drink {
+  grid-area: drink;
+  width: 320px;
+  display: inline-block;
+  margin: 4px 10px 5px 10px;
+  background: white;
+}
+.products {
+  border: groove;
+  border-top: none;
+  text-align: left;
+}
+.description {
+  color: grey;
+}
+.menuTitle {
+  font-weight: normal;
+}
