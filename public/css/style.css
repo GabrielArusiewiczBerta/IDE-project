@@ -183,3 +183,6 @@ header figcaption time {
 .menuTitle {
   font-weight: normal;
 }
+#drinkContent {
+  display: none;
+}
