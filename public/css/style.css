@@ -95,6 +95,7 @@ header figcaption time {
 .fundo-preto {
     padding: 5px 10px;
     background: black;
+    color: white;
 }
 
 /* Scroll suave */

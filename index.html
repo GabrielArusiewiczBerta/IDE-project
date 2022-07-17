@@ -33,7 +33,7 @@
 
     <main>
       <section id="about">
-        <h2>About The Cafe</h2>
+        <h2 class="fundo-preto">About The Cafe</h2>
 
         <p>
           The Cafe was founded in blabla by Mr. Smith in lorem ipsum dolor sit
@@ -65,141 +65,145 @@
         </div>
       </section>
       <section id="menu">
-        <h2>
-          the menu
-        </h2>
-        <div>
-          <menu>
-            <button>
-              Eat
-            </button>
-            <button>
-              Drink
-            </button>
-          </menu>
+        <div class="menuPrinc">
+          <h2>
+           THE MENU
+          </h2>
+        </div>
+        <div class="menu">
+         <a id="eat" class="eat js-eat" onclick="toggle('eat');">Eat</a>
+         <a id="drink" class="drink js-drink" onclick="toggle('drink');">Drink</a>
+        </div>
+        <div id="drinkContent" class="products">
           <section>
-            <ul>
-              <li>
-                <b>
+              <br/>
+              <br/>
+                <b class="menuTitle">
                   Coffee
                 </b>
-                <p>
+                <p class="description">
                   Regular cofee 2.50
                 </p>
-              </li>
-              <li>
-                <b>
+                <br/>
+                <b class="menuTitle">
                   Chocolato
                 </b>
-                <p>
+                <p class="description">
                   Chocolate espresso with milk 4.50
                 </p>
-              </li>
-              <li>
-                <b>
+                <br/>
+                <b class="menuTitle">
                   Corretto
                 </b>
-                <p>
+                <p class="description">
                   wiskey and coffee 5.00
                 </p>
-              </li>
-              <li>
-                <b>
+                <br/>
+                <b class="menuTitle"> 
                   Iced tea
                 </b>
-                <p>
+                <p class="description">
                   Hoy tea, except not hot 3.00
                 </p>
-              </li>
-              <li>
-                <b>
+                <br/>
+                <b class="menuTitle">
                   Soda
                 </b>
-                <p>
+                <p class="description">
                   Coke, Sprite, Fanta, etc. 2.50
                 </p>
-              </li>
-            </ul>
           </section>
+        </div>
+        <div id="eatContent" class="products">
           <section>
-            <ul>
-              <li>
-                <b>
+            <br/>
+            <br/>
+                <b class="menuTitle">
                   Bread Basket
                 </b>
-                <p>
+                <p class="description">
                   Assortment of fresh baked fruit bread and muffins 5.50
                 </p>
-              </li>
-              <li>
-                <b>
+                <br/>
+                <b class="menuTitle">
                   Honey Almond Granola with Fruits
                 </b>
-                <p>
+                <p class="description">
                   Natural ceral of honey toasted oats, raisins, almonds and dates 7.00
                 </p>
-              </li>
-              <li>
-                <b>
+                <br/>
+                <b class="menuTitle">
                   Belgian Waffle
                 </b>
-                <p>
+                <p class="description">
                   Vanilla flavored batter with malted flour 7.50
                 </p>
-              </li>
-              <li>
-                <b>
+                <br/>
+                <b class="menuTitle">
                   Scrambled eggs
                 </b>
-                <p>
+                <p class="description">
                   Scrambled eggs, roasted red pepper and garlic, with green onions 7.50
                 </p>
-              </li>
-              <li>
-                <b>
+                <br/>
+                <b class="menuTitle">
                   Blueberry Pancakes
                 </b>
-                <p>
+                <p class="description">
                   With syroup, butter and loats of berries 8.50
                 </p>
-              </li>
-            </ul>
-            <figure>
-              <img src="public/img/coffeehouse2.jpg" alt="Xicara de cafe" />
-            </figure>
           </section>
         </div>
       </section>
-      <section id="where">
-        <h2>
+        <figure>
+          <img src="public/img/coffeehouse2.jpg" alt="Xicara de cafe" />
+        </figure>
+      <section id="where" style="text-align:center">
+        <h2 class="fundopreto">
           Where to find us
         </h2>
         <p>
           Find us at some address at some place.
         </p>
         <figure>
-          <img src="public/img/map.jpg" alt="Xicara de cafe" />
+          <img src="public/img/map.jpg" alt="mapa" width="700px"/>
         </figure>
         <p>
-          <div>
-            FYI! 
+         
+          <div style="width: 700px;
+           margin-left: auto;
+          margin-right: auto;
+          text-align: start;"> <div style="
+          background: black;
+          color: white;
+          width: 40px;
+          font-family: sans-serif;
+          font-size: 20px;
+          display:inline-block;
+          text-align: center;">
+              FYI! 
           </div>
-          We offer full-service catering for any event, large or small.
-           We understand your needs and we will cater the food to satisfy 
+          We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy 
            the biggerst criteria of them all, both look and taste.
+           <p style="text-align: start;">
+            <strong>
+              Reserve
+            </strong>
+            a table, ask for today's special or just send us a message:
+          </p>
+          </div>
+          
         </p>
-        <p>
-          <strong>
-            Reserve
-          </strong>
-          a table, ask for today's special or just send us a message:
-        </p>
+        
       </section>
-      <form>
-        <input type="text" placeholder="Name" name="name"/>
-        <input type="number" min="1" placeholder="How many people" name="manypeople"/>
-        <input type="date"  name="date"/>
-        <input type="text" placeholder="Message \ Special requirements" name="message"/>
+      <form style="width: 100px;
+      margin-left: 33%;
+     margin-right: auto;
+     text-align: start;">
+        <input type="text" style="width: 350%; height: 50px;" placeholder="Name" name="name"/>
+        <input type="number" style="width: 350%; height: 50px;" min="1" placeholder="How many people" name="manypeople"/>
+        <input type="date"  style="width: 353%; height: 50px;" name="date"/>
+        <input type="text" style="width: 350%; height: 50px;" placeholder="Message \ Special requirements" name="message"/>
         <button type="submit">
           Send Message
         </button>
